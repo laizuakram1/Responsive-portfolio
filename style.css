@@ -25,6 +25,11 @@ body{
     z-index:100;
 
 }
+.header a span{
+    font-size: 60px;
+    color: cyan;
+    font-weight: bold;
+}
 
 .logo{
     position:relative;
