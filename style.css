@@ -197,7 +197,7 @@ body{
 .sub-title{
     font-size: 60px;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 .sub-title span{
     color:#0ef;
@@ -267,7 +267,7 @@ section{
 .skills-container{
     width:100%;
     height:800px;
-    padding:75px 90px;
+    padding:20px 90px;
     margin-left:120px;
     display: flex;
     align-items: center;
@@ -282,7 +282,7 @@ section{
 
 }
 .technical-bars{
-    width:50%;
+    max-width:50%;
     padding:20px;
 
 }
@@ -355,10 +355,16 @@ section{
 
 /* professional skills css */
 .professional-skills{
-    border:1px solid red;
-    width:50%;
+    max-width:50%;
     padding:20px;
-    background-color: rgb(212, 207, 207);
+    /* background-color: rgb(212, 207, 207); */
+}
+.skills{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding:40px 0;
+    
 }
 .skill{
     width:160px;
@@ -366,13 +372,22 @@ section{
     /* background-color: #2965f1; */
     position:relative;
 }
+.skill small{
+    font-size: 14px;
+    font-weight:400;
+    letter-spacing: 1px;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
 .outer{
     width:160px;
     height:160px;
     border-radius: 50%;
     padding:20px;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(252, 252, 252, 0.7);
+                -6px -6px 10px -1px rgba(0, 238, 255, 1);
 }
 .inner{
     width:120px;
@@ -381,18 +396,49 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-                -0.5px -0.5px 0px rgba(255,255,255,1),
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 238, 255, 1),
+                inset -4px -4px 6px -1px rgba(0, 238, 255, 1),
+                -0.5px -0.5px 0px rgba(0, 238, 255, 1),
                 0.5px 0.5px 0px rgba(0,0,0,0.15),
                 0px 12px 10px -10px rgba(0,0,0,0.05);
 }
-#number{
+
+.number{
     font-weight:400;
-    color:#555;
+    color:#fff;
 }
 
 circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dashoffset: 472;
+    stroke-dasharray: 472;
+    animation: animate 2s linear forwards;
+
+}
+/* problem solving circle */
+.circle2{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dashoffset: 472;
+    stroke-dasharray: 472;
+    animation: animate2 2s linear forwards;
+
+}
+/*communication circle*/
+.circle3{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dashoffset: 472;
+    stroke-dasharray: 472;
+    animation: animate3 2s linear forwards;
+
+}
+/*creativity circle*/
+.circle4{
     fill:none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
@@ -411,6 +457,24 @@ svg{
 @keyframes animate {
     100%{
         stroke-dashoffset: 165;
+    }
+    
+}
+@keyframes animate2 {
+    100%{
+        stroke-dashoffset: 61;
+    }
+    
+}
+@keyframes animate3 {
+    100%{
+        stroke-dashoffset: 120;
+    }
+    
+}
+@keyframes animate4 {
+    100%{
+        stroke-dashoffset: 184;
     }
     
 }
