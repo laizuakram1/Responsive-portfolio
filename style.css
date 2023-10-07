@@ -266,16 +266,16 @@ section{
 }
 .skills-container{
     width:100%;
-    height:100vh;
+    height:800px;
     padding:75px 90px;
     margin-left:120px;
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
 }
 .heading1{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
@@ -283,7 +283,7 @@ section{
 }
 .technical-bars{
     width:50%;
-    border: 1px solid red;
+    padding:20px;
 
 }
 
@@ -353,6 +353,44 @@ section{
     border: 1px solid #61DBFB;
 }
 
+/* professional skills css */
+.professional-skills{
+    border:1px solid red;
+    width:50%;
+    padding:20px;
+    background-color: #d3d3d3;
+}
+.skill{
+    width:160px;
+    height:160px;
+    /* background-color: #2965f1; */
+    position:relative;
+}
+.outer{
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    padding:20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(252, 252, 252, 0.7);
+}
+.inner{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+#number{
+    font-weight:400;
+    color:#555;
+}
 
 
 
