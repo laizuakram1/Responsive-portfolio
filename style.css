@@ -358,7 +358,7 @@ section{
     border:1px solid red;
     width:50%;
     padding:20px;
-    background-color: #d3d3d3;
+    background-color: rgb(212, 207, 207);
 }
 .skill{
     width:160px;
@@ -396,18 +396,24 @@ circle{
     fill:none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 472;
     stroke-dasharray: 472;
+    animation: animate 2s linear forwards;
 
 }
 
 svg{
-    position: relative;
-    left:0px;
-    top:-160px;
-    
+    position:absolute;
+    top:0;
+    left:0;
 }
 
+@keyframes animate {
+    100%{
+        stroke-dashoffset: 165;
+    }
+    
+}
 
 
 
