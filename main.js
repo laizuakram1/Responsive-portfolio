@@ -63,3 +63,8 @@ setInterval(() =>{
     }
     
 },25)
+
+
+// dynamically update year
+const updateYear = new Date().getFullYear();
+document.getElementById("year").innerHTML=updateYear;
