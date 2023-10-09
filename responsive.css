@@ -1,1 +1,61 @@
 
+/* responsive for mobile */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: none;
+    }
+    .navbar #toggle{
+        display: block;
+        font-size:28px;
+        color:#0ef;
+    }
+    .home-content h1{
+        font-size:40px;
+    }
+    .about{
+        display:flex;
+    }
+    .about-text{
+        text-align: center;
+    }
+    .about-img{
+        padding:10px;
+    }
+    .about-img img{
+        width:100%;
+        padding:0;
+    }
+    .skills-container {
+        width:100%;
+        margin:0;
+        padding:20px;
+        display: grid;
+        grid-template-columns: repeat(1fr, auto);
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+    .professional-skills{
+        display:grid;
+        grid-template-columns: repeat(2fr, auto);
+        margin-bottom:400px;
+        
+    }
+    .main-text{
+        margin-top: 440px;
+    }
+    .main-text h2{
+        font-size: 40px;
+    }
+    .portfolio-content .row{
+        margin-bottom: 20px;
+    }
+    .contact{
+        display:flex;
+    }
+    .contact-text h2{
+        font-size: 50px;
+       
+    }
+}
