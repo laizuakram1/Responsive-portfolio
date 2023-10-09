@@ -344,6 +344,10 @@ section{
     background-color: #61DBFB;
     animation: react 1s linear forwards;
 }
+.node{
+    background-color: #68a063;
+    animation: react 1s linear forwards;
+}
 .html span{
     border: 1px solid #e34c26;
 }
@@ -356,6 +360,9 @@ section{
 .react span{
     border: 1px solid #61DBFB;
 }
+.node span{
+    border: 1px solid #68a063;
+}
 
 /* professional skills css */
 .professional-skills{
@@ -367,7 +374,7 @@ section{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding:40px 0;
+    padding:90px 0;
     
 }
 .skill{
@@ -733,6 +740,11 @@ svg{
 @keyframes react {
     100%{
         width: 67%;
+    }
+}
+@keyframes node {
+    100%{
+        width: 77%;
     }
 }
 
